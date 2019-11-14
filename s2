@@ -1,0 +1,31 @@
+Alors, Bob à une clé public1 et une clef privé1
+       Alice à une clé public2 et une clé privé2
+
+
+Bob chiffre un message avec ça clé privé1
+    il envoie à alice le message chiffré ainsi que ça clé public1
+
+Alice à la reçoie le message chiffré ainsi que la clé public1
+Alice déchiffre le message avec la clé public1
+
+Alice chiffre un nouveau message avec la clé public1
+     elle prend le message chiffré et le chiffre avec ça clé privé2
+     elle envoie le messagechiffré avec la clé prublic2
+
+Bob reçoie le message chiffré avec la clé public2
+    Il déchiffre le message avec la clé public2 puis la clé privé1
+    GOOD
+
+Par la suite si Bob ou Alice veulent envoyé un message
+Il chiffre avec la clé public de l'autre + il rechiffre avec ça clé public
+
+Du coup la c'est bien sécu, on peut passer en chiffre sysmétrique est s'envoyer la clé via le chiffrement assymetrique
+
+
+probleme du sysmetrique, on peux faire de l'uspartion.
+
+
+Alors on fait notre message, on calcul son Hash
+
+[m;C1(SB;HASH(m)]
+
